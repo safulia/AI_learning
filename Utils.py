@@ -15,6 +15,7 @@ from numpy.random import randint
 from scipy.misc import imresize
 import os
 import sys
+import imageio
 
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
@@ -71,7 +72,7 @@ def load_data_from_dirs(dirs, ext):
     for d in dirs:
         for f in os.listdir(d): 
             if f.endswith(ext):
-                image = data.imread(os.path.join(d,f))
+                image = imageio.imread(os.path.join(d,f))
                 if len(image.shape) > 2:
                     files.append(image)
                     file_names.append(os.path.join(d,f))
