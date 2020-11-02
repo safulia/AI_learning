@@ -15,7 +15,7 @@ import numpy as np
 from numpy import array
 import os
 from keras.models import load_model
-from scipy.misc import imresize
+#from scipy.misc import imresize
 import argparse
 
 import Utils, Utils_model
