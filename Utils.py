@@ -13,6 +13,7 @@ import numpy as np
 from numpy import array
 from numpy.random import randint
 #from scipy.misc import imresize
+import PIL
 import os
 import sys
 import imageio
